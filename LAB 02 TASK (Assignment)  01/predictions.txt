@@ -1,0 +1,52 @@
+Task2Demojava:
+
+
+Before s1.addCredits(10):
+Expected: s1 completedCredits changes from 30 to 40.
+
+Before s2.addCredits(5):
+Expected: s2 completedCredits changes from 25 to 30.
+
+Before s1.remainingCredits(120):
+Expected: remaining = 120 - 40 = 80, so the method returns 80.
+
+Before s2.remainingCredits(120):
+Expected: remaining = 120 - 30 = 90, so the method returns 90.
+
+Before s1.summary():
+Expected: ID: SP26-BAI-005, Name: Abeer Amina, Completed Credits: 40
+
+Before s2.summary():
+Expected: ID: SP26-BAI-010, Name: Ali Ishtiaq, Completed Credits: 30.
+
+
+OverloadDemojava:
+
+
+Prediction 1:
+Call: enroll("CSC241")
+Expected: The method enroll(String courseCode) will be selected.
+Output: Enrolled in course: CSC241
+
+Prediction 2:
+Call: enroll("CSC241", 2)
+Expected: The method enroll(String courseCode, int section) will be selected.
+Output: Enrolled in CSC241, Section: 2
+
+
+Prediction 3:
+Call: enroll(241)
+Expected: The method enroll(int numericCourseCode) will be selected.
+Output: Enrolled in numeric course: 241
+
+
+Prediction 4:
+Call: enroll()
+Expected: Invalid call because no enroll() method has zero parameters.
+Expected compiler result: compile-time error.
+
+
+Prediction 5:
+Call: enroll("241", "2")
+Expected: Invalid call because no enroll() method accepts two String parameters.
+Expected compiler result: compile-time error.
