@@ -1,0 +1,42 @@
+Activity 5 - Package Visibility Error Experiment
+
+1. private secret from SamePackageCheck
+
+Attempted:
+System.out.println("secret = " + box.secret);
+
+Result:
+Compilation error because secret has private access in AccessBox.
+
+Meaning:
+private members are accessible only inside their declaring class.
+
+
+2. protected family from OutsideCheck
+
+Attempted:
+System.out.println("family = " + box.family);
+
+Result:
+Compilation error because family has protected access in AccessBox.
+
+Meaning:
+A protected member is not directly accessible to a normal
+client in a different package.
+
+
+3. packageOnly from OutsideCheck
+
+Attempted:
+System.out.println("packageOnly = " + box.packageOnly);
+
+Result:
+Compilation error because packageOnly is not public in AccessBox;
+it cannot be accessed from outside package model.
+
+Meaning:
+Package-private/default members are accessible only within
+the same package.
+
+
+All forbidden lines were commented again before final submission.

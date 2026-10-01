@@ -1,0 +1,2 @@
+Cart a Total: Rs 270.0
+Cart b Total: Rs 9.8

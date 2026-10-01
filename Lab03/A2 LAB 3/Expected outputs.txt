@@ -1,0 +1,15 @@
+no function called
+n = 4
+completedLabs = 1
+
+increaseNumber was called
+n = 4
+completedLabs = 1
+
+updateObject was called
+n = 4
+completedLabs = 2
+
+replaceLocal was called:
+n = 4
+completedLabs = 2

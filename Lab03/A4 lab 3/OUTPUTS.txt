@@ -1,0 +1,27 @@
+DigitalWallet Test 
+
+Initial balances:
+Wallet 1: 0.0
+Wallet 2: 0.0
+
+deposit(500): true
+Wallet 1 balance: 500.0
+
+deposit(-10): false
+Wallet 1 balance: 500.0
+
+spend(200): true
+Wallet 1 balance: 300.0
+
+spend(1000): false
+Wallet 1 balance: 300.0
+
+canAfford(301): false
+Wallet 1 balance: 300.0
+
+spend(300): true
+Wallet 1 balance: 0.0
+
+Multiple Object Test
+Wallet 1 final balance: 0.0
+Wallet 2 final balance: 0.0

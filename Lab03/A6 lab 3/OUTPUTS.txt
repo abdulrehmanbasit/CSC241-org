@@ -1,0 +1,29 @@
+LibraryBook Integration Test
+
+Book 1 configure(3): true
+Book 1 - Borrowed: 0, Available: 3
+
+Book 2 configure(1): true
+Book 2 - Borrowed: 0, Available: 1
+
+Book 1 borrow(2): true
+Book 1 - Borrowed: 2, Available: 1
+
+Book 1 borrow(2): false
+Book 1 - Borrowed: 2, Available: 1
+
+Book 1 returnCopies(1): true
+Book 1 - Borrowed: 1, Available: 2
+
+Book 1 returnCopies(2): false
+Book 1 - Borrowed: 1, Available: 2
+
+Book 1 borrow(): true
+Book 1 - Borrowed: 2, Available: 1
+
+Book 1 configure(10): false
+Book 1 - Borrowed: 2, Available: 1
+
+Independence Check
+Book 1 - Borrowed: 2, Available: 1
+Book 2 - Borrowed: 0, Available: 1

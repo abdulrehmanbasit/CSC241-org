@@ -1,0 +1,25 @@
+StudentProfile Test
+
+registerId("SP26-BCS-047"): true
+Student ID: SP26-BCS-047
+
+registerId("NEW-ID"): false
+Student ID remains: SP26-BCS-047
+
+setGpa(3.40): true
+GPA: 3.4
+
+setGpa(4.50): false
+GPA remains: 3.4
+
+addCredits(15): true
+Completed Credits: 15
+
+addCredits(-2): false
+Completed Credits remain: 15
+
+addCredits(3): true
+Completed Credits: 18
+
+Final Summary
+Student ID: SP26-BCS-047, GPA: 3.4, Completed Credits: 18
